@@ -7,7 +7,7 @@ public class IgaguriController : MonoBehaviour
         GetComponent<Rigidbody>().AddForce(dir);// 指定された方向（dir）に「力（AddForce）」を加える
     }
 
-    void OnConllisionEnter(Collision collision)
+    void OnCollisionEnter(Collision collision)
     {
         GetComponent<Rigidbody>().isKinematic = true;
     }
