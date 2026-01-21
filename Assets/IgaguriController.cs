@@ -10,6 +10,7 @@ public class IgaguriController : MonoBehaviour
     void OnCollisionEnter(Collision collision)
     {
         GetComponent<Rigidbody>().isKinematic = true;
+        GetComponent<ParticleSystem>().Play();
     }
     void Start()//ゲーム開始時　オブジェクトの作成　一回だけ
     {
