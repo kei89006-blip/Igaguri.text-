@@ -15,7 +15,7 @@ public class IgaguriController : MonoBehaviour
     void Start()//ゲーム開始時　オブジェクトの作成　一回だけ
     {
         Application.targetFrameRate =60;//ゲームの滑らかさを秒間60フレームに固定
-        Shoot(new Vector3(0,200,2000));//引数（dir）には、(右に0, 上に200, 奥に2000) のベクトル
+       // Shoot(new Vector3(0,200,2000));//引数（dir）には、(右に0, 上に200, 奥に2000) のベクトル
     }
 
 
