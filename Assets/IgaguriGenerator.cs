@@ -9,10 +9,12 @@ public class IgaguriGenerator : MonoBehaviour
     {
         if(Mouse.current.leftButton.wasPressedThisFrame)
         {
-            GameObject igaguri =
+            GameObject igaguri = 
                 Instantiate(igaguriPrefab);
+            Ray ray = Camera.main.ScreenPointToRay(
+                Mouse.current.position.value);
             igaguri.GetComponent<IgaguriController>().Shoot(
-                new Vector3(0,200,2000));
+                ray.direction * 2000);
         }
     }
 }
